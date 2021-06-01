@@ -228,11 +228,11 @@ int main()
 {
     // EXEMPLO 1: Criação de um arquivo texto
     // Não há distinção entre o inteiro e o float, são todos transformados em caracteres
-    escreveArquivoTexto();
+    //escreveArquivoTexto();
 
     fstream arq("arqTexto.txt");
-    cout << "Tamanho do arquivo texto: " << tamanhoArquivo(arq) << endl;
-    // arq.close();
+    //cout << "Tamanho do arquivo texto: " << tamanhoArquivo(arq) << endl;
+    //arq.close();
 
     // EXEMPLO 2: Leitura de um arquivo texto utilizando getline
     // A cada linha, imprimimos o índice da linha e o valor de EOF.
@@ -251,7 +251,7 @@ int main()
 
     //fstream arq("arqTexto.txt", ios::app);
     // fstream arq("arq.bin", ios::app);
-     //adicionaInfoArquivo(arq);
+     //dicionaInfoArquivo(arq);
      //cout << "Tamanho do arquivo texto: " << tamanhoArquivo(arq) << endl;
      //arq.close();
 
@@ -263,8 +263,8 @@ int main()
     //carregaRegistro(100000);
 
     // EXEMPLO 8: Leitura de um arquivo grande usando um buffer na memória principal
-     //geraCSV();
-     //carregaArquivoPorBlocos(5000000);
+     geraCSV();
+     carregaArquivoPorBlocos(5000000);
 
     return 0;
 }
